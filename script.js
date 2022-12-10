@@ -20,7 +20,7 @@ nameBtn.addEventListener("click", function(event) {
     localStorage.setItem("name", JSON.stringify(name));
     
     var nameForm = document.getElementById("name-form");
-    nameForm.setAttribute("class", "is-hidden")
+    nameForm.setAttribute("class", "is-hidden");
 
     var titleForm = document.getElementById("title-form");
     titleForm.classList.remove("is-hidden");
@@ -51,6 +51,9 @@ titleBtn.addEventListener("click", function(event) {
 
     var title = titleInput.value.trim();
     getTitles(title)
+
+    var titleForm = document.getElementById("title-form");
+    titleForm.setAttribute("class", "is-hidden")
 
 });
 
@@ -88,6 +91,7 @@ titlesList.addEventListener('click', function (e) {
       selectedTitle = e.target.innerHTML
       getGiphy(selectedTitle)
     }
+    titlesList.setAttribute("class", "is-hidden")
   });
 
 function getGiphy(selectedTitle) {
