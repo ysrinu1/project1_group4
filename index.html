@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <p>Welcome to our movie giphy generator!</p>
-    <form class="" id="enter-name">
-        <label for="name">What is your name?</label>
-        <input type="text" name="name" id="name-input" placeholder="enter name">
-        <button id="submit-btn-name">Submit</button>
-    </form>
-    <form class="" id="enter-title">
-        <label for="title">Enter the title of a movie or tv show.</label>
-        <input type="text" name="title" id="title-input" placeholder="enter title">
-        <button id="submit-btn-title">Submit</button>
-    </form>
+<body class="has-background-light is-family-monospace has-text-centered is-vcentered">
+    <h1 class="is-size-2">Welcome to our movie giphy generator!</h1>
+    <div class="container mt-6">
+        <form class="box" id="enter-name">
+            <label class="label" for="name">What would you like to be called?</label>
+            <div class="control">
+                <input class="input" type="text" name="name" id="name-input" placeholder="enter name">
+            </div>
+            <button class="button is-small is-dark is-outlined" id="submit-btn-name">Submit</button>
+        </form>
+    </div>
+    <div class="container mt-6"></div>
+        <form class="box" id="enter-title">
+            <label class="label" for="title">Enter the title of a movie.</label>
+            <div class="control">
+                <input class="input" type="text" name="title" id="title-input" placeholder="enter title">
+            </div>
+            <button class="button is-small is-dark is-outlined"  id="submit-btn-title">Submit</button>
+        </form>
+    </div>
     <ul id="titles-list"></ul>
     <!-- <img src="https://media.giphy.com/media/gEYoiDrq2L8R9ddAM9/giphy.gif" alt=""
     class="giphy"> -->
