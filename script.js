@@ -18,6 +18,12 @@ nameBtn.addEventListener("click", function(event) {
     console.log(name);
 
     localStorage.setItem("name", JSON.stringify(name));
+    
+    var nameForm = document.getElementById("name-form");
+    nameForm.setAttribute("class", "is-hidden")
+
+    var titleForm = document.getElementById("title-form");
+    titleForm.classList.remove("is-hidden");
 
 });
 
