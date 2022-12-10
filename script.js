@@ -19,6 +19,7 @@ nameBtn.addEventListener("click", function(event) {
 
     localStorage.setItem("name", JSON.stringify(name));
     
+    // hide the nameForm and display the titleForm
     var nameForm = document.getElementById("name-form");
     nameForm.setAttribute("class", "is-hidden");
 
@@ -52,6 +53,7 @@ titleBtn.addEventListener("click", function(event) {
     var title = titleInput.value.trim();
     getTitles(title)
 
+    // hide the titleForm, the titles-list will populate in getTitles
     var titleForm = document.getElementById("title-form");
     titleForm.setAttribute("class", "is-hidden")
 
@@ -91,6 +93,8 @@ titlesList.addEventListener('click', function (e) {
       selectedTitle = e.target.innerHTML
       getGiphy(selectedTitle)
     }
+
+    // hide the titlesList sections, TODO: the images-list will need to be displayed
     titlesList.setAttribute("class", "is-hidden")
   });
 
