@@ -77,6 +77,7 @@ function getTitles(title) {
             for (var i = 0; i < 5; i++) {
                 var titleBtnHere = document.createElement("button");
                 titleBtnHere.textContent = data.title_results[i].name;
+                // add this styling to the buttons
                 titleBtnHere.setAttribute("class", "titleBtn button mx-4 my-4 is-dark")
                 titlesList.appendChild(titleBtnHere);
             }
