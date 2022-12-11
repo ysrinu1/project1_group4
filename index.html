@@ -14,7 +14,7 @@
         <form class="box" id="enter-name">
             <label class="label" for="name">What would you like to be called?</label>
             <div class="control">
-                <input class="input" type="text" name="name" id="name-input" placeholder="enter name">
+                <input class="input" type="text" name="name" id="name-input" placeholder="Enter your name, perhaps a character, like Black Widow.">
             </div>
             <button class="button is-small is-dark is-outlined" id="submit-btn-name">Submit</button>
         </form>
@@ -23,13 +23,16 @@
         <form class="box" id="enter-title">
             <label class="label" for="title">Enter the title of a movie.</label>
             <div class="control">
-                <input class="input" type="text" name="title" id="title-input" placeholder="enter title">
+                <input class="input is-focused" type="text" name="title" id="title-input" placeholder="Enter a movie title; may I suggest Avengers?">
             </div>
             <button class="button is-small is-dark is-outlined"  id="submit-btn-title">Submit</button>
         </form>
     </div>
     <div id="titles-list"></div>
-    <div id="images-list"></div>
+    <div class="is-hidden" id="images-section">
+        <div id="images-list"></div>
+        <button class="button is-small is-dark is-outlined" id="submit-btn-startover">Start Over</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
