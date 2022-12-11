@@ -23,7 +23,7 @@ nameBtn.addEventListener("click", function(event) {
 
     // hide the nameForm and display the titleForm
     var nameForm = document.getElementById("name-form");
-    nameForm.setAttribute("class", "is-hidden");
+    nameForm.classList.add("is-hidden");
     var titleForm = document.getElementById("title-form");
     titleForm.classList.remove("is-hidden");
 
@@ -39,7 +39,7 @@ titleBtn.addEventListener("click", function(event) {
 
     // hide the titleForm, the titles-list will populate in getTitles
     var titleForm = document.getElementById("title-form");
-    titleForm.setAttribute("class", "is-hidden")
+    titleForm.classList.add("is-hidden")
 });
 
 // The renderName function will retrieve the name from local storage to display in getTitles.
@@ -103,7 +103,7 @@ titlesList.addEventListener('click', function (e) {
     }
 
     // hide the titlesList section, display the imagesSection
-    titlesList.setAttribute("class", "is-hidden")
+    titlesList.classList.add("is-hidden");
     imagesSection.classList.remove("is-hidden");
 });
 
@@ -145,7 +145,7 @@ startOverBtn.addEventListener("click", function(event) {
     titleInput.value = ""
 
     // hide the imagesSection section, display the nameForm
-    imagesSection.setAttribute("class", "is-hidden")
+    imagesSection.classList.add("is-hidden");
     var nameForm = document.getElementById("name-form");
     nameForm.classList.remove("is-hidden");
 });
