@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>movie giphy gen</title>
+</head>
+<body class="has-background-light is-family-monospace has-text-centered is-vcentered">
+    <h1 class="is-size-2">Welcome to our movie giphy generator!</h1>
+    <div class="container mt-6" id="name-form">
+        <form class="box" id="enter-name">
+            <label class="label" for="name">What would you like to be called?</label>
+            <div class="control">
+                <input class="input" type="text" name="name" id="name-input" placeholder="Enter your name, perhaps a character, like Black Widow.">
+            </div>
+            <button class="button is-small is-dark is-outlined" id="submit-btn-name">Submit</button>
+        </form>
+    </div>
+    <div class="container mt-6 is-hidden" id="title-form">
+        <form class="box" id="enter-title">
+            <label class="label" for="title">Enter the title of a movie.</label>
+            <div class="control">
+                <input class="input is-focused" type="text" name="title" id="title-input" placeholder="Enter a movie title; may I suggest Avengers?">
+            </div>
+            <button class="button is-small is-dark is-outlined"  id="submit-btn-title">Submit</button>
+        </form>
+    </div>
+    <div id="titles-list"></div>
+    <div class="is-hidden" id="images-section">
+        <div id="images-list"></div>
+        <button class="button is-small is-dark is-outlined" id="submit-btn-startover">Start Over</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
